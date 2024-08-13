@@ -125,3 +125,14 @@ $(document).ready(function(){
 
 });	
 	
+
+var options = {
+	strings: ["Data Scientist", "Machine Learning Engineer"],
+	typeSpeed: 50,
+	backSpeed: 25,
+	backDelay: 1000,
+	startDelay: 500,
+	loop: true
+};
+
+var typed = new Typed(".typing-effect", options);

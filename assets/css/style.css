@@ -775,6 +775,11 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     font-size:  16px;
     margin-top:  18px;
 }
+
+.single-contact-add-info p:hover{
+    color:  red;
+}
+
 .single-contact-add-info {
     margin-bottom:  26px;
 }
@@ -859,5 +864,10 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     background-color: #9f00ff;
 }
 
+.typing-effect {
+    font-size: 24px;
+    color: #4b0082; /* Indigo */
+    font-weight: bold;
+}
 
 /*========================Thank you=================
