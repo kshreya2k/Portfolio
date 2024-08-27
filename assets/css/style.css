@@ -671,10 +671,11 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
         10. Clients
 --------------------------------------*/
 .clients {padding-top: 50px;}
+
 .clients-area {
     display: flex;
     align-items: center;
-    height: 250px;
+    height: 450px;
 }
 .clients-area .item {padding: 0 25px;}
 
@@ -688,6 +689,13 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 /*-------------------------------------
         11. Contact
 --------------------------------------*/
+/* Container for the services */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    text-align: center;
+}
 .contact {
     background: #f9fbfd;
     padding: 50px 0 100px;
@@ -869,5 +877,6 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     color: #4b0082; /* Indigo */
     font-weight: bold;
 }
+
 
 /*========================Thank you=================
