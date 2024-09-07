@@ -878,5 +878,25 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     font-weight: bold;
 }
 
-
+.custom-button {
+    display: inline-block;
+    background-color: #b636ff; /* Purple background */   
+    width: 30%; 
+    padding: 8px;
+    font-weight: bold; /* Bold text */
+}
+.custom-button:hover {
+    display: inline-block;
+    background-color: #4b0082; /* Purple background */   
+    width: 30%; 
+    padding: 8px;
+    font-weight: bold; /* Bold text */
+}
+.custom-button p {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
 /*========================Thank you=================
