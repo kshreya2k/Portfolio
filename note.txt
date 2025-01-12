@@ -1,3 +1,8 @@
+Next: 
+1. Add more sspace before mission
+2. Align skill boxes in center
+
+
 <!--/.skills-->
 <!--skills end -->
 		<section id="skills" class="skills text-center">
