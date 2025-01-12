@@ -244,7 +244,8 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
 /*-------------------------------------
         4.  About
 --------------------------------------*/
-.about {padding: 50px 0 100px;}
+.about {padding: 50px 0 100px;
+background-color: #f9fbfd;}
 .about-content {padding-top: 100px;}
 /*.single-about-txt*/
 .single-about-txt h3 {
@@ -324,6 +325,25 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
 
 /*.single-about-img */
 
+.mission-quote {
+    font-size: 1.5rem;
+    line-height: 2;
+    color: #444444;
+    border-left: 5px solid #b636ff; /* A left border for a quote effect */
+    padding: 15px 20px;
+    background: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+.mission-quote p {
+    margin: 0;
+}
+
+.mission-quote p b {
+    color: #b636ff;
+
+}
 /*-------------------------------------
         5.  Education
 --------------------------------------*/
@@ -434,6 +454,50 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
    transform: translateX(-50%);
    margin-left: 0;
 }
+/* ------------------------------------------- */
+.skills-section {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.section-heading {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.skills-category h3 {
+    font-size: 1.6rem;
+    color: #777777;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    margin-bottom: 40px;
+}
+
+.skill-item {
+    text-align: center;
+}
+
+.skill-item img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.skill-item p {
+    font-size: 0.95rem;
+    color: #555;
+    margin: 0;
+}
 
 /*-------------------------------------
         7. Experience
@@ -499,7 +563,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 }
 .main-timeline .description {
     font-size: 14px;
-    color: #999fb3;
+    color: #5c6276;
 }
 .main-timeline .timeline-content.right{
     float: right;
