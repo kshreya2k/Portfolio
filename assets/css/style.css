@@ -129,7 +129,7 @@ nav.navbar.bootsnav {
 
 /*.nav li*/
 nav.navbar.bootsnav ul.nav > li > a {
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 400;
     text-transform:uppercase;
     -webkit-transition: 0.3s linear; 
@@ -138,7 +138,7 @@ nav.navbar.bootsnav ul.nav > li > a {
     -o-transition: 0.3s linear; 
     transition: 0.3s linear;
 }
-nav.navbar.bootsnav ul.nav > li > a {padding: 35px 20px;}
+nav.navbar.bootsnav ul.nav > li > a {padding: 35px 15px;}
 nav.navbar.bootsnav ul.nav > li > a:hover,nav.navbar.bootsnav ul.nav > li > a:focus,nav.navbar.bootsnav ul.nav > li.active>a{color: #d92cf9;}
 
 nav.navbar.bootsnav ul.nav > li.dropdown > a.dropdown-toggle:after {
@@ -979,4 +979,156 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     text-transform: uppercase;
     letter-spacing: 4px;
 }
-/*========================Thank you=================
+
+
+.skills-map-circle {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f4faff;
+  position: relative;
+}
+
+/* Outer circular border */
+.outer-ring {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  border: 8px solid #49a7db;
+  background: radial-gradient(circle at center, #fff 60%, transparent 60%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  animation: pulseBorder 3s infinite ease-in-out;
+  box-shadow: 0 0 20px rgba(72, 167, 219, 0.3);
+}
+
+/* Animated dashed arrows around */
+.arrow-ring {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 3px dashed rgba(72, 167, 219, 0.4);
+  animation: rotateRing 8s linear infinite;
+  box-sizing: border-box;
+}
+
+/* Inner circle with text */
+.inner-ring {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 2px solid #e0f2f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+}
+
+.inner-ring h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #00334d;
+  text-align: center;
+}
+
+/* Animations */
+@keyframes rotateRing {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulseBorder {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(72, 167, 219, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 35px rgba(72, 167, 219, 0.5);
+  }
+}
+
+.references {
+    padding: 60px 0;
+    background-color: #f9fbfd;
+}
+.testimonial-box {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 25px 20px;
+    margin: 20px auto;
+    text-align: center;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.testimonial-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(182, 54, 255, 0.15);
+    background: linear-gradient(135deg, #ffffff 0%, #f9f5ff 100%);
+}
+
+.testimonial-box p {
+    font-style: italic;
+    font-size: 12px;
+    color: #444;
+    margin: 15px 0;
+}
+
+.testimonial-box h4 {
+    font-weight: 600;
+    color: #b636ff;
+    margin-bottom: 5px;
+}
+
+.testimonial-box h5 {
+    font-size: 13px;
+    color: #777;
+}
+
+/* Profile Image + LinkedIn */
+.testimonial-profile {
+    position: relative;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.testimonial-profile img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #b636ff;
+    box-shadow: 0 2.5px 8px rgba(0,0,0,0.1);
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.testimonial-profile img:hover {
+    box-shadow: 0 0 12px #a51ff2, 0 0 20px rgba(182, 54, 255, 0.3);
+    transform: scale(1.05);
+}
+
+.linkedin-icon {
+    color: #0077b5;
+    font-size: 18px;
+    position: absolute;
+    right: -3px;
+    bottom: -4px;
+    background: #fff;
+    border-radius: 50%;
+    padding: 3px;
+    transition: 0.3s ease;
+}
+
+.linkedin-icon:hover {
+    color: #004182;
+}
